@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  width: 420px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  border-right: 2px solid #000000;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  animation: typing 4s steps(20) infinite, blink 1s infinite;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.triangle-arrow-up {
+  widows: 0;
+  height: 0;
+  /* border-top: 60px solid blue; */
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid orange;
+  border-left: 60px solid transparent;
+}
+
+.triangle-arrow-down {
+  widows: 0;
+  height: 0;
+  border-top: 60px solid blue;
+  border-right: 60px solid transparent;
+  /* border-bottom: 60px solid orange; */
+  border-left: 60px solid transparent;
+}
+
+.triangle-arrow-right {
+  widows: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-left: 60px solid pink;
+  border-bottom: 60px solid transparent;
+  /* border-left: 60px solid transparent; */
+}
+
+.triangle-arrow-left {
+  widows: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 50px solid greenyellow;
+  border-bottom: 50px solid transparent;
+  /* border-left: 60px solid transparent; */
+}
+
+.crop-face {
+  widows: 0;
+  height: 0;
+  border-radius: 50%;
+  /* background-color: yellowgreen; */
+  border-top: 60px solid greenyellow;
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid greenyellow;
+  border-left: 60px solid greenyellow;
+  position: relative;
+}
+
+.eye-dot {
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  background-color: #000000;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.diamond-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.diamond-upper {
+
+}
+
+.diamond-upper-arrow-up-left {
+  width: 0;
+  height: 0;
+  /* border-top: 50px solid blue; */
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #8a8affab;
+  border-left: 50px solid transparent;
+  position: absolute;
+  /* bottom: 0; */
+  top: 50px;
+  left: -1px;
+}
+
+.diamond-upper-arrow-up-right {
+  width: 0;
+  height: 0;
+  /* border-top: 50px solid blue; */
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #5c5cfdab;
+  border-left: 50px solid transparent;
+  position: absolute;
+  /* bottom: 0; */
+  top: 50px;
+  left: 99px;
+}
+
+.diamond-upper-arrow-down-center {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #6767ffab;
+  border-right: 50px solid transparent;
+  /* border-bottom: 60px solid blue; */
+  border-left: 50px solid transparent;
+  position: absolute;
+  /* bottom: 0; */
+  top: 50px;
+  left: 49px;
+}
+
+.diamond-container .daimond-bottom {
+  width: 0;
+  height: 0;
+  border-top: 100px solid#5353ffab;
+  border-right: 100px solid transparent;
+  /* border-bottom: 60px solid blue; */
+  border-left: 100px solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+
+@keyframes typing {
+  0% {
+    width: 0px;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
