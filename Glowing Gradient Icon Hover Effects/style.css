@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.container {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container span {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 90px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.container span:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.container span:nth-child(1), .container span:nth-child(1):before {
+  background: linear-gradient(to right, #fa4546, #f03e2f);
+}
+
+.container span:nth-child(2), .container span:nth-child(2):before {
+  background: linear-gradient(to right, #64e246, #49ce99);
+}
+
+.container span:nth-child(3), .container span:nth-child(3):before {
+  background: linear-gradient(to right, #c15699, #8b6ed7);
+}
+
+.container span:nth-child(4), .container span:nth-child(4):before {
+  background: linear-gradient(to right, #fb4129, #ff882f);
+}
+
+.container span:hover:before {
+  opacity: 1;
+  filter: blur(40px);
+}
+
+.container span i {
+  opacity: 0.4;
+  font-size: 30px;
+  transition: .6s;
+}
+
+.container span:hover i {
+  opacity: 1;
+  transform: scale(1.2);
+}
