@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 3px 3px 12px #d0d0d0, -3px -3px 12px #d0d0d0;
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.box:nth-child(1):hover .count-1 {
+  box-shadow: 0 0 0 400px #ec4a65;
+}
+
+.box:nth-child(1):hover {
+  color: #fff;
+}
+
+.box:nth-child(2):hover .count-2 {
+  box-shadow: 0 0 0 400px #65e12c;
+}
+
+.box:nth-child(2):hover {
+  color: #fff;
+}
+
+.box:nth-child(3):hover .count-3{
+  box-shadow: 0 0 0 400px #4eaaf6;
+}
+
+.box:nth-child(3):hover {
+  color: #fff;
+}
+
+.count-1, .count-2, .count-3 {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.count-1 {
+  background-color: #ec4a65;
+}
+
+.count-2 {
+  background-color: #65e12c;
+}
+
+.count-3 {
+  background-color: #4eaaf6;
+}
+
+.service-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.box button{
+  width: 100px;
+  height: 36px;
+  margin: 0 auto;
+  border: 0;
+  background: #fff;
+  box-shadow: 2px 2px 12px #e0dddd, -2px -2px 12px #e0dddd;
+  cursor: pointer;
+  outline: none;
+}
